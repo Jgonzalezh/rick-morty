@@ -13,7 +13,8 @@ export default function Characters(props) {
       <div  className="container-characters">
         {characters.map((character, index ) => (
             <div className="character-container" key={index}>
-                <div><img src={character.images} alt={character.name}/>
+                <div>
+                    <img src={character.image} alt={character.name}/>
                     </div>
                 <div>
                     <h3>{character.name}</h3>

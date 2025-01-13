@@ -6,7 +6,7 @@ import Characters from "./components/Characters";
 function App() {
   const [characters, setCharacters] = useState(null)
   const reqApi = async () => { 
-    const api = await fetch("http://rickandmortyapi.com/api/character");
+    const api = await fetch("https://rickandmortyapi.com/api/character");
     const characterApi = await api.json();
     setCharacters(characterApi.results)
   };
